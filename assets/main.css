@@ -1,5 +1,6 @@
 body {
     background-color: #111216;
+    
 }
 
 #main {
@@ -8,7 +9,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : lightgray ;
 }
 
 #links {
