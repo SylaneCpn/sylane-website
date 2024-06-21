@@ -13,8 +13,9 @@ pub struct MarkdownProps {
     content: ReadOnlySignal<String>,
 }
 
+
 /// Render some text as markdown.
-pub fn Markdown(props: MarkdownProps) -> Element {
+fn Markdown(props: MarkdownProps) -> Element {
     let content = &*props.content.read();
     let parser = Parser::new(content);
 
@@ -27,5 +28,18 @@ pub fn Markdown(props: MarkdownProps) -> Element {
             class: "{&*props.class.read()}",
             dangerous_inner_html: "{html_buf}"
         }
+    }
+}
+
+// Api for markdown.
+#[component]
+pub fn Md(content : &'static str) -> Element {
+    let class = use_signal(|| String::from("md_class"));
+    rsx! {
+        link {
+            rel: "stylesheet",
+            href: "/md.css"
+        }
+        div { class: "md", Markdown { class: class, content: content } }
     }
 }

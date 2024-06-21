@@ -1,10 +1,12 @@
 #![allow(non_snake_case)]
 mod md;
-mod md_pages;
+mod pages;
+mod navbar;
 
 use dioxus::prelude::*;
 use tracing::Level;
-use md_pages::*;
+use pages::*;
+use navbar::Navbar;
 
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
@@ -22,6 +24,7 @@ enum Route {
     SchoolFr {},
 }
 
+
 fn main() {
     // Init logger
     dioxus_logger::init(Level::INFO).expect("failed to init logger");
@@ -30,8 +33,11 @@ fn main() {
 
 fn App() -> Element {
     rsx! {
+
         link { rel: "stylesheet", href: "/main.css" }
         Router::<Route> {}
+
+        
     }
 }
 
@@ -43,48 +49,7 @@ fn Home() -> Element {
 
     rsx! {
 
-        Link {
-            to: Route::Home {
-                
-            },
-            "Go to Home"
-        }
-        Link {
-            to: Route::AboutFr {
-                
-            },
-            "Go to About"
-        }
-
-        Link {
-            to: Route::HomeFr {
-                
-            },
-            "Go to Home Fr"
-        }
-
-        Link {
-            to: Route::ProjectsFr {
-                
-            },
-            "Go to Projects"
-        }
-
-        Link {
-            to: Route::ResumeFr {
-                
-            },
-            "Go to Resume"
-        }
-
-
-        Link {
-            to: Route::SchoolFr {
-                
-            },
-            "Go to School"
-        }
-
+        Navbar{}
         
         div {
             h1 { "High-Five counter: {count}" }

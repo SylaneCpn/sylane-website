@@ -1,0 +1,30 @@
+body {
+    background-color: #111216;
+    
+}
+
+#main
+{
+    margin:  auto;
+    margin-top : 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : lightgray ;
+    width: 90%;
+}
+
+
+
+
+pre {
+    background-color: black;
+    border: 0.1rem solid;
+}
+
+code {
+    display: block;
+    margin : 1rem;
+}

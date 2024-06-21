@@ -8,13 +8,13 @@ name = "sylane-website"
 default_platform = "web"
 
 # `build` & `serve` dist path
-out_dir = "dist"
+out_dir = "docs"
 
 # resource (assets) file folder
 asset_dir = "assets"
 
 [web.app]
-
+# base_path = "sylane-website"
 # HTML title tag content
 title = "sylane-website"
 
