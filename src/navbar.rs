@@ -25,8 +25,6 @@ pub fn Navbar() -> Element {
         link { rel: "stylesheet", href: "/navbar.css" }
         div {class : "extended_nav",
             nav { class : "navbar",
-    
-                div {class : "empty_half"}
                 div { class : "links" ,
                     Links {}
                 }
