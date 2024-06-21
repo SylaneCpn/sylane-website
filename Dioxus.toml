@@ -17,6 +17,7 @@ asset_dir = "assets"
 # base_path = "sylane-website"
 # HTML title tag content
 title = "sylane-website"
+base_path = "sylane-website"
 
 [web.watcher]
 
@@ -31,10 +32,10 @@ watch_path = ["src", "assets" , "md"]
 
 # CSS style file
 
-style = []
+style = ["./prism.css","main.css"]
 
 # Javascript code file
-script = []
+script = ["./prism.js"]
 
 [web.resource.dev]
 

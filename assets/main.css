@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono' , monospace;
     color : lightgray ;
     width: 90%;
 }

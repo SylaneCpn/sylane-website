@@ -2,7 +2,7 @@
 
 some text here 
 
-```rust
+<pre><code class="language-rust">
 
 #![allow(non_snake_case)]
 mod md;
@@ -101,4 +101,4 @@ fn Home() -> Element {
         }
     }
 }
-```
+</code></pre>

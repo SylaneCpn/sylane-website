@@ -34,8 +34,8 @@ fn main() {
 fn App() -> Element {
     rsx! {
 
-        link { rel: "stylesheet", href: "/main.css" }
         Router::<Route> {}
+        
 
         
     }
