@@ -1,23 +1,54 @@
+:root {
+    --bg: rgb(30, 30, 30);
+    --primary_color : rgb(11, 111, 69);
+    --secondary_color: rgb(220, 220, 220);
+}
+
 body {
-    background-color: #111216;
+    background-color: var(--bg);
+    color: var(--secondary_color);
     
 }
 
 #main
 {
     margin:  auto;
-    margin-top : 60px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono' , monospace;
-    color : lightgray ;
-    width: 90%;
+    color : var(--secondary_color) ;
+    width: 65%;
 }
 
 
+img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+}
 
+
+h1 {
+    color: var(--primary_color);
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary_color);
+}
+
+h3 {
+    color: var(--primary_color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary_color);
+}
 
 pre {
     background-color: black;

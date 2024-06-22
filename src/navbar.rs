@@ -6,12 +6,11 @@ use crate::Route;
 pub fn Links() -> Element {
 
     rsx! {
-        Link {to : Route::Home {}, "Home"}
-        Link {to : Route::HomeFr{} , "Home fr"}
-        Link {to : Route::ProjectsFr{} , "Projects"}
-        Link {to : Route::ResumeFr{} , "Resume"}
-        Link {to : Route::AboutFr{} , "About"}
-        Link {to : Route::SchoolFr{} , "School"}
+        Link {to : Route::HomeFr{} , "Acceuil"}
+        Link {to : Route::ProjectsFr{} , "Projets"}
+        Link {to : Route::ResumeFr{} , "CV"}
+        Link {to : Route::AboutFr{} , "A propos"}
+        Link {to : Route::SchoolFr{} , "Ecole"}
     }
                     
 }
@@ -29,6 +28,7 @@ pub fn Navbar() -> Element {
                     Links {}
                 }
                 img {class : "svg" , src : "/hamburger.svg" , onclick : move |_| extended.toggle()}
+                
             
             
             }

@@ -11,11 +11,9 @@ use navbar::Navbar;
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
     #[route("/")]
-    Home {},
+    HomeFr {},
     #[route("/about_fr")]
     AboutFr {},
-    #[route("/home_fr")]
-    HomeFr {},
     #[route("/projects_fr")]
     ProjectsFr {},
     #[route("/resume_fr")]
@@ -33,30 +31,12 @@ fn main() {
 
 fn App() -> Element {
     rsx! {
-
+        link { rel: "stylesheet", href: "/main.css" }
+        
         Router::<Route> {}
         
-
-        
     }
 }
 
 
 
-#[component]
-fn Home() -> Element {
-    let mut count = use_signal(|| 0);
-
-    rsx! {
-
-        Navbar{}
-        
-        div {
-            h1 { "High-Five counter: {count}" }
-            button { onclick: move |_| count += 1, "Up high!" }
-            button { onclick: move |_| count -= 1, "Down low!" }
-            button { onclick: move |_| count -= 1, "Second Down low!" }
-            div { "Hello Everyone !"}
-        }
-    }
-}

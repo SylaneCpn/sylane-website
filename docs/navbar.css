@@ -4,6 +4,12 @@
     z-index: 1;
     top: 0;
     left: 0;
+    background-color: var(--bg);
+    border-bottom:1px var(--secondary_color) solid;
+    opacity: 0.8;
+
+
+
 
     
 }
@@ -16,7 +22,8 @@ nav {
     width: 100vw;
     height: auto;
     margin: auto;
-    background-color: cadetblue;
+    /* background-color: var(--bg); */
+    
 }
 
 
@@ -35,14 +42,14 @@ nav {
 
 .links a {
     text-decoration: none;
-    color: bisque;
+    color: var(--secondary_color);
     margin-top: 1rem ;
     margin-bottom: 1rem;
     transition: all 1s;
 }
 
 .links a:hover {
-    color: #1f1f1f; 
+    color: var(--primary_color); 
     
 
 }
@@ -54,11 +61,13 @@ nav {
     height: 45px;
     width: auto;
     margin-right : 20px;
+    border-radius: 15%;
+    margin : 7px;
     transition: all 1s;
 }
 
 .svg:hover {
-    background-color: #1f1f1f;
+    background-color: var(--primary_color) ;
     cursor: pointer;
 }
 
@@ -84,12 +93,13 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background-color: cadetblue;
+        margin-bottom: 35px;
+        /* background-color: var(--bg); */
     
     }
     
     .extended a {
-        color :bisque;
+        color :var(--secondary_color);
         text-decoration: none;
         transition: all 1s;
     
@@ -97,7 +107,7 @@ nav {
     .extended a:hover {
     
         
-        color : #1f1f1f ;
+        color : var(--primary_color) ;
         cursor : pointer;
     
     }

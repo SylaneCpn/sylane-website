@@ -1,104 +1,22 @@
-## Home Fr
+# Accueil 
 
-some text here 
+<div class = photo_text>
+<img src="/img/portrait.jpg"></img>
+<div class="txt">
 
-<pre><code class="language-rust">
+## Qui suis-je ?
+Je m'appelle Sylane Campan, je suis actuellement étudiant en 4ème année à l'Ecole Nationale d'Ingénieur de Brest.
 
-#![allow(non_snake_case)]
-mod md;
-mod md_pages;
+J'ai créé ce site afin de répertorier différentes informations sur moi et ma formation. Le but étant d'avoir un aperçu de ce que je peux faire en developpement web mais aussi d'avoir en endroit pour pouvoir montrer mes expériences et mes compétences. Je n'ai pas la prétention de faire ici quelque chose d'incroyable ou de revolutionaire, mais je souhaite tout de même créer une page qui me ressemble.
 
-use dioxus::prelude::*;
-use tracing::Level;
-use md_pages::*;
+Tout ce que vous verrez ici à été fait "à la main" uniquement en HTML/CSS et JS. Je le mettrai à jour et rajouterai des nouveautés de temps en temps. Le site est loin d'être au complet pour l'instant, je m'excuse pour les pages incomplêtes.
 
-#[derive(Clone, Routable, Debug, PartialEq)]
-enum Route {
-    #[route("/")]
-    Home {},
-    #[route("/about_fr")]
-    AboutFr {},
-    #[route("/home_fr")]
-    HomeFr {},
-    #[route("/projects_fr")]
-    ProjectsFr {},
-    #[route("/resume_fr")]
-    ResumeFr {},
-    #[route("/school_fr")]
-    SchoolFr {},
-}
+Ce site s'adresse à tout ceux qui veulent me découvrir (ou me redécouvrir) peu importe qui vous êtes. Si vous voulez en apprendre un peu plus sur moi vous êtes au bon endroit :)
 
-fn main() {
-    // Init logger
-    dioxus_logger::init(Level::INFO).expect("failed to init logger");
-    launch(App);
-}
+Je vous remercie d'avoir pris le temps de consulter cette page et je vous souhaite une bonne lecture !
+</div>
+</div>
 
-fn App() -> Element {
-    rsx! {
-        link { rel: "stylesheet", href: "/main.css" }
-        Router::<Route> {}
-    }
-}
+## Comment ça fonctionne ?
 
-
-
-#[component]
-fn Home() -> Element {
-    let mut count = use_signal(|| 0);
-
-    rsx! {
-
-        Link {
-            to: Route::Home {
-                
-            },
-            "Go to Home"
-        }
-        Link {
-            to: Route::AboutFr {
-                
-            },
-            "Go to About"
-        }
-
-        Link {
-            to: Route::HomeFr {
-                
-            },
-            "Go to Home Fr"
-        }
-
-        Link {
-            to: Route::ProjectsFr {
-                
-            },
-            "Go to Projects"
-        }
-
-        Link {
-            to: Route::ResumeFr {
-                
-            },
-            "Go to Resume"
-        }
-
-
-        Link {
-            to: Route::SchoolFr {
-                
-            },
-            "Go to School"
-        }
-
-        
-        div {
-            h1 { "High-Five counter: {count}" }
-            button { onclick: move |_| count += 1, "Up high!" }
-            button { onclick: move |_| count -= 1, "Down low!" }
-            button { onclick: move |_| count -= 1, "Second Down low!" }
-            div { "Hello Everyone !"}
-        }
-    }
-}
-</code></pre>
+Pour commencer vous n'avez qu'a clicker sur un des liens de la barre de navigation !  
