@@ -2,7 +2,8 @@
 
 use dioxus::prelude::*;
 use crate::md::Md;
-use crate::Navbar;
+use crate::navbar::Navbar;
+use crate::contacts::Contacts;
 
 
 //##############################################################
@@ -12,6 +13,7 @@ pub fn AboutFr() -> Element {
     rsx! {
     Navbar{}
     Md { content : include_str!("../md/about_fr.md")}
+    Contacts {}
     }
 }
 
@@ -20,6 +22,7 @@ pub fn HomeFr() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/home_fr.md")}
+        Contacts {}
     }
 }
 
@@ -29,6 +32,7 @@ pub fn ProjectsFr() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/projects_fr.md")}
+        Contacts {}
     }
 }
 
@@ -37,6 +41,7 @@ pub fn ResumeFr() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/resume_fr.md")}
+        Contacts {}
     }
 }
 
@@ -45,5 +50,6 @@ pub fn SchoolFr() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/school_fr.md")}
+        Contacts {}
     }
 }

@@ -38,7 +38,7 @@ pub fn Md(content : &'static str) -> Element {
     rsx! {
         link {
             rel: "stylesheet",
-            href: "/md.css"
+            href: "sylane-website/md.css"
         }
         div { class: "md", Markdown { class: class, content: content } }
     }

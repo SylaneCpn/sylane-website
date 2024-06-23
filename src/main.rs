@@ -2,11 +2,11 @@
 mod md;
 mod pages;
 mod navbar;
+mod contacts;
 
 use dioxus::prelude::*;
 use tracing::Level;
 use pages::*;
-use navbar::Navbar;
 
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
@@ -31,7 +31,7 @@ fn main() {
 
 fn App() -> Element {
     rsx! {
-        link { rel: "stylesheet", href: "/main.css" }
+        link { rel: "stylesheet", href: "sylane-website/main.css" }
         
         Router::<Route> {}
         
