@@ -32,7 +32,7 @@ watch_path = ["src", "assets" , "md"]
 
 # CSS style file
 
-style = ["css/md.css","css/navbar.css","css/prism.css","css/main.css","css/box.css" ,"css/contacts.css"]
+style = ["css/main.css","css/md.css","css/navbar.css","css/prism.css","css/box.css" ,"css/contacts.css"]
 
 # Javascript code file
 script = ["js/prism.js"]
