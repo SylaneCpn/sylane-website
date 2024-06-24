@@ -3,6 +3,7 @@ mod md;
 mod pages;
 mod navbar;
 mod contacts;
+mod boxs;
 
 use dioxus::prelude::*;
 use tracing::Level;
@@ -11,15 +12,17 @@ use pages::*;
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
     #[route("/")]
-    HomeFr {},
-    #[route("/about_fr")]
-    AboutFr {},
-    #[route("/projects_fr")]
-    ProjectsFr {},
-    #[route("/resume_fr")]
-    ResumeFr {},
-    #[route("/school_fr")]
-    SchoolFr {},
+    Home {},
+    #[route("/about")]
+    About {},
+    #[route("/projects")]
+    Projects {},
+    #[route("/resume")]
+    Resume {},
+    #[route("/school")]
+    School {},
+    #[route("/blog")]
+    Blog{}
 }
 
 
@@ -31,7 +34,7 @@ fn main() {
 
 fn App() -> Element {
     rsx! {
-        link { rel: "stylesheet", href: "sylane-website/main.css" }
+        // link { rel: "stylesheet", href: "main.css" }
         
         Router::<Route> {}
         

@@ -9,7 +9,7 @@ pub fn Contacts() -> Element {
                 div { class : "c_item",
                     div{ class : "header",
                         p {"Email"}
-                        img{ src : "sylane-website/img/pics/mail.svg"} 
+                        img{ src : "img/pics/mail.svg"} 
                     }
                     a {href  : "" , "s0campan@enib.fr"}
                 }
@@ -17,7 +17,7 @@ pub fn Contacts() -> Element {
                 div { class : "c_item",
                     div{ class : "header",
                         p {"LinkedIn"}
-                        img{ src : "sylane-website/img/pics/linked_in.svg"} 
+                        img{ src : "img/pics/linked_in.svg"} 
                     }
                     a { href : "", "sylane-campan"}
                 }
@@ -25,7 +25,7 @@ pub fn Contacts() -> Element {
                 div { class : "c_item",
                     div{ class : "header",
                         p {"Github"}
-                        img{ src : "sylane-website/img/pics/github.svg"} 
+                        img{ src : "img/pics/github.svg"} 
                     }
                     a { href : "", "SylaneCpn"}
                 }

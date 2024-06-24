@@ -4,12 +4,13 @@ use dioxus::prelude::*;
 use crate::md::Md;
 use crate::navbar::Navbar;
 use crate::contacts::Contacts;
+use crate::boxs::Box;
 
 
 //##############################################################
 //Md pages
 #[component]
-pub fn AboutFr() -> Element {
+pub fn About() -> Element {
     rsx! {
     Navbar{}
     Md { content : include_str!("../md/about_fr.md")}
@@ -18,7 +19,7 @@ pub fn AboutFr() -> Element {
 }
 
 #[component]
-pub fn HomeFr() -> Element {
+pub fn Home() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/home_fr.md")}
@@ -28,7 +29,7 @@ pub fn HomeFr() -> Element {
 
 
 #[component]
-pub fn ProjectsFr() -> Element {
+pub fn Projects() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/projects_fr.md")}
@@ -37,7 +38,7 @@ pub fn ProjectsFr() -> Element {
 }
 
 #[component]
-pub fn ResumeFr() -> Element {
+pub fn Resume() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/resume_fr.md")}
@@ -46,10 +47,21 @@ pub fn ResumeFr() -> Element {
 }
 
 #[component]
-pub fn SchoolFr() -> Element {
+pub fn School() -> Element {
     rsx! {
         Navbar{}
         Md { content : include_str!("../md/school_fr.md")}
+        Box {title : "An interesting Title" , children : rsx! {Md {content : include_str!("../md/school_fr/test.md")}}}
+        Contacts {}
+
+    }
+}
+
+#[component]
+pub fn Blog() -> Element {
+    rsx! {
+        Navbar{}
+        Md { content : include_str!("../md/blog_fr.md")}
         Contacts {}
     }
 }
