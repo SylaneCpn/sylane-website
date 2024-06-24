@@ -31,5 +31,6 @@ J'aimerai beaucoup pouvoir en faire mon métier. Que ce soit dans le développem
 Voilà qui conclut ma toute pétite présentation de ma personne,je suis conscient que cette page pourrai être plus complête. Je rajouterai plus de contenu quand je souhaiterai raconter plus de choses. En attendant, j'espère que cette page vous à plus! Merci à vous de l'avoir lue !
 
 ![moi_et_blue](/img/me_and_blue.jpg)
+_Une photo de mon chat et moi !_
 
 Un grand merci à [Vincent Kerhoas](https://web.enib.fr/~kerhoas/) et [Fabrice Harrouet](https://web.enib.fr/~harrouet/), professeurs à l'ENIB (avec des sites personnels au contenu très interessant) et à mes collègues [Elouan](https://elllouan.github.io/) et [Florian](https://mpek29.github.io/) qui ont inspiré la création de ce site.

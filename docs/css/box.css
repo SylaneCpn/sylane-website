@@ -3,6 +3,9 @@
     border: 1px var(--gradient_color) solid;
     background-color: var(--bg);
     cursor: pointer;
+    transition: background-color 1s ease-in-out;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 

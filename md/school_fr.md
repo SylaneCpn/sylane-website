@@ -6,9 +6,4 @@ Bienvenue sur la page école. Ici vous trouverez quelques les projets notables q
 
 La plupart des projets qui se trouvent ici sont ceux du cycle ingénieur (le cycle préparatoire étant plus théorique) mais il ya quand même des choses à dire sur mes premières année à l'ENIB.
 
-```rust
-let a = 0;
-let b : Box<u128> = Box::new(a);
 
-println!("Hello Word !");
-```

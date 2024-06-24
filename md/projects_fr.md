@@ -1,4 +1,4 @@
-# Projects 
+# Projets 
 
 ## Qu'est-ce qu'on trouve ici ?
 

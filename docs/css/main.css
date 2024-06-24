@@ -2,7 +2,7 @@
     --bg: rgb(30, 30, 30);
     --primary_color : rgb(11, 111, 69);
     --secondary_color: rgb(220, 220, 220);
-    --gradient_color : #8f00ff;
+    --gradient_color : rgb(11,114,97);
 }
 
 body {
@@ -43,6 +43,8 @@ h1 {
 
 h2 {
     color: var(--primary_color);
+    text-align: start;
+    
 }
 
 h3 {
